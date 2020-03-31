@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="column">
+        <div id="battlefield" class="battlefield">
+
+        </div>
+    </div>
+    <div class="column"></div>
+</div>
+</body>
+</html>
+
+<script id="battlefield-tmpl" type="x-handlebars-template">
+    {{#each rows}}
+    <div class="battlefield__row">
+        {{#each this}}
+        <div class="battlefield__cell" data-row="{{this.row}}" data-col="{{this.col}}"></div>
+        {{/each}}
+    </div>
+    {{/each}}
+</script>
+<script src="handlebars.js"></script>
+<script src="script.js"></script>

@@ -1,0 +1,23 @@
+$container-width: 960px;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: $container-width;
+  height: 100vh;
+
+  .column {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}

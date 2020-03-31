@@ -1,0 +1,25 @@
+@import "../abstracts/colors";
+
+$battlefield-cell-size: 33px;
+
+.battlefield {
+  &__row {
+    &:last-child {
+      .battlefield__cell {
+        border-bottom: 1px solid $color-main-them;
+      }
+    }
+  }
+
+  &__cell {
+    float: left;
+    border-top: 1px solid $color-main-them;
+    border-left: 1px solid $color-main-them;
+    height: $battlefield-cell-size;
+    width: $battlefield-cell-size;
+
+    &:last-child {
+      border-right: 1px solid $color-main-them;
+    }
+  }
+}
